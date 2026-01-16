@@ -1,0 +1,13 @@
+{
+  "name": "Snappy findbar",
+  "description": "Updates the findbar to be  at teh top of the browser, with a snappy animation and not feel cramped",
+  "author": "WilleMahMille",
+  "version": "1.0.0",
+  "files": [
+    "chrome.css"
+  ],
+  "categories": [
+    "UI",
+    "Animation"
+  ],
+}
