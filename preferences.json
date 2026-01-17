@@ -1,13 +1,122 @@
 {
   "name": "Snappy findbar",
-  "description": "Updates the findbar to be  at teh top of the browser, with a snappy animation and not feel cramped",
+  "description": "Updates the findbar to be at the top of the browser, with a snappy animation and not feel cramped",
   "author": "WilleMahMille",
   "version": "1.0.0",
-  "files": [
-    "chrome.css"
-  ],
-  "categories": [
-    "UI",
-    "Animation"
-  ],
+  "files": ["chrome.css"],
+  "categories": ["UI", "Animation"],
+  "preferences": [
+    {
+      "type": "heading",
+      "title": "Animation Settings"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.animation-duration",
+      "title": "Animation Duration",
+      "description": "Duration of the show/hide animation (e.g., 0.2s, 300ms)",
+      "default": "0.2s",
+      "css-variable": "--snappy-findbar-animation-duration"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.animation-easing",
+      "title": "Animation Easing",
+      "description": "Easing function for animation (e.g., ease, ease-in-out, cubic-bezier(0.4, 0, 0.2, 1))",
+      "default": "ease",
+      "css-variable": "--snappy-findbar-animation-easing"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.transform-hiddenY",
+      "title": "Hidden Position",
+      "description": "How far off-screen the findbar hides (negative values, e.g., -15vh, -100px)",
+      "default": "-15vh",
+      "css-variable": "--snappy-findbar-transform-hiddenY"
+    },
+    {
+      "type": "heading",
+      "title": "Position Settings"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.position-top",
+      "title": "Top Position",
+      "description": "Distance from top of viewport (e.g., 5vh, 50px)",
+      "default": "5vh",
+      "css-variable": "--snappy-findbar-position-top"
+    },
+    {
+      "type": "heading",
+      "title": "Visual Settings"
+    },
+    {
+      "type": "color",
+      "id": "snappy-findbar.background-color",
+      "title": "Background Color",
+      "description": "Background color of the findbar",
+      "default": "#000000",
+      "css-variable": "--snappy-findbar-background-color"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.border-radius",
+      "title": "Border Radius",
+      "description": "Roundness of corners (e.g., 15px, 1rem)",
+      "default": "15px",
+      "css-variable": "--snappy-findbar-border-radius"
+    },
+    {
+      "type": "color",
+      "id": "snappy-findbar.border-color",
+      "title": "Border Color",
+      "description": "Color of the findbar border",
+      "default": "#808080",
+      "css-variable": "--snappy-findbar-border-color"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.border-width",
+      "title": "Border Width",
+      "description": "Thickness of the border (e.g., 1px, 2px)",
+      "default": "1px",
+      "css-variable": "--snappy-findbar-border-width"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.width",
+      "title": "Findbar Width",
+      "description": "Width of the findbar (e.g., 40%, 500px)",
+      "default": "40%",
+      "css-variable": "--snappy-findbar-width"
+    },
+    {
+      "type": "heading",
+      "title": "Spacing Settings"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.padding-vertical",
+      "title": "Vertical Padding",
+      "description": "Top and bottom padding (e.g., 15px, 1rem)",
+      "default": "15px",
+      "css-variable": "--snappy-findbar-padding-vertical"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.padding-horizontal",
+      "title": "Horizontal Padding",
+      "description": "Left and right padding (e.g., 5px, 0.5rem)",
+      "default": "5px",
+      "css-variable": "--snappy-findbar-padding-horizontal"
+    },
+    {
+      "type": "string",
+      "id": "snappy-findbar.container-row-gap",
+      "title": "Container Row Gap",
+      "description": "Space between rows in the findbar container (e.g., 10px, 0.5rem)",
+      "default": "10px",
+      "css-variable": "--snappy-findbar-container-row-gap"
+    }
+  ]
 }
