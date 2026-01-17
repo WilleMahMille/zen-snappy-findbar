@@ -15,10 +15,11 @@
   --snappy-findbar-border-width: 1px;
   --snappy-findbar-width: 40%;
 
-  /* Spacing variables */   
-  --snappy-findbar-padding-vertical: 120px;
-  --snappy-findbar-padding-horizontal: 10px;
-  --snappy-findbar-container-row-gap: 10px;
+  /* Spacing variables */
+  --snappy-findbar-padding-vertical: 10px;
+  --snappy-findbar-padding-horizontal: 5px;
+  --snappy-findbar-container-row-gap: 5px;
+  --snappy-findbar-container-column-gap: 0px;
 }
 
 findbar {
@@ -27,10 +28,10 @@ findbar {
   border-radius: var(--snappy-findbar-border-radius) !important;
   margin: 0px !important;
 
-  padding-top: var(--snappy-findbar-padding-vertical);
-  padding-bottom: var(--snappy-findbar-padding-vertical);
-  padding-left: var(--snappy-findbar-padding-horizontal);
-  padding-right: var(--snappy-findbar-padding-horizontal);
+  padding-top: var(--snappy-findbar-padding-vertical) !important;
+  padding-bottom: var(--snappy-findbar-padding-vertical) !important;
+  padding-left: var(--snappy-findbar-padding-horizontal) !important;
+  padding-right: var(--snappy-findbar-padding-horizontal) !important;
 
   width: var(--snappy-findbar-width) !important;
   max-width: 100%;
@@ -65,6 +66,7 @@ findbar {
     height: auto !important;
 
     row-gap: var(--snappy-findbar-container-row-gap);
+    column-gap: var(--snappy-findbar-container-column-gap);
 
     & > :first-child {
       width: 100% !important;
@@ -72,6 +74,43 @@ findbar {
 
     & .findbar-textbox {
       flex-grow: 1;
+    }
+
+    /* Checkbox styling */
+    & checkbox {
+      padding: 0px 0px !important;
+      margin: 0px 1px !important;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+
+      &:hover {
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      &[checked="true"] {
+        background-color: rgba(255, 255, 255, 0.15) !important;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2) !important;
+        }
+      }
+
+      /* Hide checkbox images */
+      & .checkbox-check,
+      & .checkbox-icon {
+        display: none !important;
+      }
+
+      /* Add padding to checkbox label for better click area */
+      & .checkbox-label {
+        padding: 4px 10px;
+      }
+    }
+
+    /* Hide the find status description */
+    & .findbar-find-status {
+      display: none !important;
     }
   }
 
