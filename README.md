@@ -1,6 +1,6 @@
 # Snappy Findbar
 
-A Zen Browser mod that transforms the findbar into a sleek, centered overlay at the top of your browser with smooth animations and a minimalistic design.
+A mod that transforms the findbar into a minimalistic, centered overlay at the top of your browser.
 
 ## Features
 
