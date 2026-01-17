@@ -1,6 +1,6 @@
 {
   "name": "Snappy findbar",
-  "description": "Makes the findbar feel snappier through a more minimalistic layout combined with a reposition to be more visible. ",
+  "description": "A Zen Browser mod that transforms the findbar into a sleek, centered overlay at the top of your browser with smooth animations and a minimalistic design.",
   "author": "WilleMahMille",
   "version": "1.0.0",
   "files": ["chrome.css"],
