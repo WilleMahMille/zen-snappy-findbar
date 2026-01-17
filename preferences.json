@@ -1,6 +1,6 @@
 {
   "name": "Snappy findbar",
-  "description": "Updates the findbar to be at the top of the browser, with a snappy animation and not feel cramped",
+  "description": "Makes the findbar feel snappier through a more minimalistic layout combined with a reposition to be more visible. ",
   "author": "WilleMahMille",
   "version": "1.0.0",
   "files": ["chrome.css"],
