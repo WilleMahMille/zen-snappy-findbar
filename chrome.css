@@ -1,20 +1,22 @@
 :root {
+  /* Customizable variables */
   /* Animation variables */
-  --snappy-findbar-transform-hiddenY: -15vh;
-  --snappy-findbar-transform-showY: 0;
   --snappy-findbar-animation-duration: 0.2s;
   --snappy-findbar-animation-easing: ease;
-
   /* Position variables */
   --snappy-findbar-position-top: 5vh;
-
   /* Visual styling variables */
   --snappy-findbar-background-color: black;
   --snappy-findbar-border-radius: 15px;
   --snappy-findbar-border-color: grey;
+
+  /* Other variables */
+  /* Position variables */
+  --snappy-findbar-transform-hiddenY: -15vh;
+  --snappy-findbar-transform-showY: 0;
+  /* Visual styling variables */
   --snappy-findbar-border-width: 1px;
   --snappy-findbar-width: 40%;
-
   /* Spacing variables */
   --snappy-findbar-padding-vertical: 10px;
   --snappy-findbar-padding-horizontal: 5px;
