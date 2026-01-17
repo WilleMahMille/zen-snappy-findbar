@@ -27,14 +27,6 @@
       "css-variable": "--snappy-findbar-animation-easing"
     },
     {
-      "type": "string",
-      "id": "snappy-findbar.transform-hiddenY",
-      "title": "Hidden Position",
-      "description": "How far off-screen the findbar hides (negative values, e.g., -15vh, -100px)",
-      "default": "-15vh",
-      "css-variable": "--snappy-findbar-transform-hiddenY"
-    },
-    {
       "type": "heading",
       "title": "Position Settings"
     },
@@ -73,50 +65,6 @@
       "description": "Color of the findbar border",
       "default": "#808080",
       "css-variable": "--snappy-findbar-border-color"
-    },
-    {
-      "type": "string",
-      "id": "snappy-findbar.border-width",
-      "title": "Border Width",
-      "description": "Thickness of the border (e.g., 1px, 2px)",
-      "default": "1px",
-      "css-variable": "--snappy-findbar-border-width"
-    },
-    {
-      "type": "string",
-      "id": "snappy-findbar.width",
-      "title": "Findbar Width",
-      "description": "Width of the findbar (e.g., 40%, 500px)",
-      "default": "40%",
-      "css-variable": "--snappy-findbar-width"
-    },
-    {
-      "type": "heading",
-      "title": "Spacing Settings"
-    },
-    {
-      "type": "string",
-      "id": "snappy-findbar.padding-vertical",
-      "title": "Vertical Padding",
-      "description": "Top and bottom padding (e.g., 15px, 1rem)",
-      "default": "15px",
-      "css-variable": "--snappy-findbar-padding-vertical"
-    },
-    {
-      "type": "string",
-      "id": "snappy-findbar.padding-horizontal",
-      "title": "Horizontal Padding",
-      "description": "Left and right padding (e.g., 5px, 0.5rem)",
-      "default": "5px",
-      "css-variable": "--snappy-findbar-padding-horizontal"
-    },
-    {
-      "type": "string",
-      "id": "snappy-findbar.container-row-gap",
-      "title": "Container Row Gap",
-      "description": "Space between rows in the findbar container (e.g., 10px, 0.5rem)",
-      "default": "10px",
-      "css-variable": "--snappy-findbar-container-row-gap"
     }
   ]
 }
